@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCC816B5-98AA-41BF-8DBC-35822882E019}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>student</RootNamespace>
+    <AssemblyName>student</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Home\Desktop\picss\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>597E51AD35C4AFEC4125C7FE5AA6DB0CF699023F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>student_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_menu.Designer.cs">
+      <DependentUpon>admin_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASSIGN_RESULT_INSERT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSIGN_RESULT_INSERT.Designer.cs">
+      <DependentUpon>ASSIGN_RESULT_INSERT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assign_result_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assign_result_update.Designer.cs">
+      <DependentUpon>assign_result_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assign_status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assign_status.Designer.cs">
+      <DependentUpon>assign_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="course.Designer.cs">
+      <DependentUpon>course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_query.Designer.cs">
+      <DependentUpon>emp_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eval_assign_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eval_assign_manage.Designer.cs">
+      <DependentUpon>eval_assign_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eval_assign_update_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eval_assign_update_manage.Designer.cs">
+      <DependentUpon>eval_assign_update_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_details.Designer.cs">
+      <DependentUpon>employee_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_update_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_update_detail.Designer.cs">
+      <DependentUpon>employee_update_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marksheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marksheet.Designer.cs">
+      <DependentUpon>marksheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marksheet_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marksheet_update.Designer.cs">
+      <DependentUpon>marksheet_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mark_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mark_query.Designer.cs">
+      <DependentUpon>mark_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master.Designer.cs">
+      <DependentUpon>master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="process.Designer.cs">
+      <DependentUpon>process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="no_assign_submission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="no_assign_submission.Designer.cs">
+      <DependentUpon>no_assign_submission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="program_assignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="program_assignment.Designer.cs">
+      <DependentUpon>program_assignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="program_new_entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="program_new_entry.Designer.cs">
+      <DependentUpon>program_new_entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="program_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="program_query.Designer.cs">
+      <DependentUpon>program_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prog_assigncode_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prog_assigncode_update.Designer.cs">
+      <DependentUpon>prog_assigncode_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="semester_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="semester_details.Designer.cs">
+      <DependentUpon>semester_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prog_assign_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prog_assign_query.Designer.cs">
+      <DependentUpon>prog_assign_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIGNUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIGNUP.Designer.cs">
+      <DependentUpon>SIGNUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="std_assign_submission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="std_assign_submission.Designer.cs">
+      <DependentUpon>std_assign_submission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="std_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="std_query.Designer.cs">
+      <DependentUpon>std_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_details.Designer.cs">
+      <DependentUpon>student_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="update_program_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_program_detail.Designer.cs">
+      <DependentUpon>update_program_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_student_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_student_details.Designer.cs">
+      <DependentUpon>update_student_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_menu.Designer.cs">
+      <DependentUpon>user_menu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin_menu.resx">
+      <DependentUpon>admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSIGN_RESULT_INSERT.resx">
+      <DependentUpon>ASSIGN_RESULT_INSERT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assign_result_update.resx">
+      <DependentUpon>assign_result_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assign_status.resx">
+      <DependentUpon>assign_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="course.resx">
+      <DependentUpon>course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_query.resx">
+      <DependentUpon>emp_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eval_assign_manage.resx">
+      <DependentUpon>eval_assign_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eval_assign_update_manage.resx">
+      <DependentUpon>eval_assign_update_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_details.resx">
+      <DependentUpon>employee_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_update_detail.resx">
+      <DependentUpon>employee_update_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marksheet.resx">
+      <DependentUpon>marksheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marksheet_update.resx">
+      <DependentUpon>marksheet_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mark_query.resx">
+      <DependentUpon>mark_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master.resx">
+      <DependentUpon>master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="process.resx">
+      <DependentUpon>process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="no_assign_submission.resx">
+      <DependentUpon>no_assign_submission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="program_assignment.resx">
+      <DependentUpon>program_assignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="program_new_entry.resx">
+      <DependentUpon>program_new_entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="program_query.resx">
+      <DependentUpon>program_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prog_assigncode_update.resx">
+      <DependentUpon>prog_assigncode_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prog_assign_query.resx">
+      <DependentUpon>prog_assign_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="semester_details.resx">
+      <DependentUpon>semester_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIGNUP.resx">
+      <DependentUpon>SIGNUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="std_assign_submission.resx">
+      <DependentUpon>std_assign_submission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="std_query.resx">
+      <DependentUpon>std_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_details.resx">
+      <DependentUpon>student_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_program_detail.resx">
+      <DependentUpon>update_program_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_student_details.resx">
+      <DependentUpon>update_student_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_menu.resx">
+      <DependentUpon>user_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="student_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkpic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkpic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\049 Fresh Milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIC-MCH0875.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protector-satinado-sobre-tierras-florentinas-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
